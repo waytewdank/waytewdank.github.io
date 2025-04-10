@@ -26,16 +26,6 @@ html, body {
   margin: 0; /* Remove default margin */
 }
 
-/*@font-face {
-  font-family: 'Doto-VariableFont_ROND,wght';
-  src: url('./Doto-VariableFont_ROND,wght.ttf') format('truetype');
-}
-
-body {
-  font-family: 'Doto-VariableFont_ROND,wght', Arial, sans-serif;
-}
-*/
-
 @font-face {
   font-family: 'TF2secondary';
   src: url('TF2secondary.ttf') format('truetype');
@@ -56,20 +46,38 @@ body {
   background-repeat: repeat;
   background-position: center;
   background-color: black; /* Fallback color */
-  display: flex; /* parent container */
 } 
- 
-/* Blog Container (all posts inside) */
+.header {
+  background-color: black; 
+  margin:auto;
+  width: 50vw; 
+  text-align: center;
+}
+.header h2 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 36px;
+}
+.header p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.links {
+  display:flex;
+  justify-content: space-evenly;
+}
+
 .blog-container {
-  display: flex; /* Make it a flex container */
-  flex-direction: column; /* Stack children vertically */
-  flex-grow: 1; /* Allow it to grow within its parent */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  width: 50vw; /* Default width for larger screens */
-  margin: auto; /* Center the blog container */
-  padding: 20px; /* Optional: Add padding for inner spacing */
+  display: flex; 
+  flex-direction: column; 
+  flex-grow: 1; 
+  overflow-y: auto; 
+  width: 50vw; 
+  margin: auto; 
   background-position: center; /* Center the background image */
-  background-color: black; /* Fallback color */
+  background-color: black; 
   text-align: center; /* Center child elements */
 }
 
@@ -103,36 +111,31 @@ body {
 }
 
 .outerborder {
-  border: 1px dashed white; /* Add the midborder border styling */
+  border: 1px dashed white; 
   display: flex;
   padding: 4px;
-  flex-grow: 1; /* Fill remaining space */
+  flex-grow: 1; 
   margin: 10px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .midborder {
-  border: 1px dashed white; /* Add the midborder border styling */
+  border: 1px dashed white; 
   display: flex;
   padding: 4px;
-  flex-grow: 1; /* Fill remaining space */ 
+  flex-grow: 1;  
 }
 
-/* Individual Blog Post */
 .blog-post {
   padding: 4px;
   background-color: black;
-  text-align: center; /* Center the text inside the blog post */
-  border: 1px dashed white; /* Add the inner border styling */
+  text-align: center; 
+  border: 1px dashed white; 
   flex-grow: 1; 
 
 }
-.actual-post {
-  padding: 20px;
-}
 
-/* Blog Post Title */
 .blog-post h2 {
   font-size: 24px;
   color: #333;
@@ -144,7 +147,7 @@ body {
   padding-bottom: 10px;
   max-height: 80vh;
 }
-/* Post Date */
+
 .post-date {
   font-style: italic;
   color: #888;
@@ -152,7 +155,6 @@ body {
   font-size: 14px;
 }
 
-/* Post Content */
 .post-content {
   font-size: 18px;
   color: #666;
@@ -161,21 +163,15 @@ body {
   margin-bottom: 15px;
 }
 
-
-/* Spaced Horizontal Rule */
 .spaced-hr {
-  margin: 20px 0; /* Adjust the margin as needed */
+  margin: 20px 0; 
 }
 
 a {
-    color: #FFFFFF; /* Same color as <p> */
-    text-decoration: none; /* No underline */
-    line-height: .3; /* Same line height as <p> */
-    font-family: courier; /* Same font family as <p> */
-    font-size: 18px; /* Same font size as <p> */
-    display: inline-block; /* Make the <a> tag behave like an inline-block element */
-    text-align: center; /* Center the text inside the <a> tag */
-    margin: 0 auto; /* Center the <a> tag within its container */
+    color: #FFFFFF; 
+    text-decoration: none; 
+    line-height: .3; 
+    font-size: 18px; 
 }
 
 a:hover {
