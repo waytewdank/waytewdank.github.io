@@ -156,6 +156,12 @@ body {
   /* Allow images to grow and shrink */
   object-fit: cover;
 }
+.actual-post h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 36px;
+}
 
 .blog-post h2 {
   font-size: 24px;
