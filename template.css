@@ -140,8 +140,21 @@ body {
   background-color: black;
   text-align: center; 
   border: 1px dashed white; 
-  flex-grow: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 
+}
+
+.blog-post img {
+  max-width: 80vh;
+  height: auto;
+  /* Maintain aspect ratio */
+  flex: 1 1 auto;
+  /* Allow images to grow and shrink */
+  object-fit: cover;
 }
 
 .blog-post h2 {
@@ -155,6 +168,7 @@ body {
   padding-bottom: 10px;
   max-height: 80vh;
 }
+
 
 .post-date {
   font-style: italic;
