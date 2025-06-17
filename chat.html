@@ -25,7 +25,6 @@
       <hr class="spaced-hr">
       </div>
 
-    <!-- Blog Container (all posts inside) -->
     <div class="blog-container">
       <!-- Second Blog Post -->
     <div class="outerborder">
@@ -33,40 +32,12 @@
         <div class="blog-post">
           <div class="actual-post">
             <h1>Please add your comment</h1>
-            <div id="comment-container">
-                <!-- Existing comments will go here -->
-            </div>
-            <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
-            <br>
-            <button id="btn-post">Post</button>
-            <script>
-                // Step 1: Add an event listener to the "Post" button
-document.getElementById("btn-post").addEventListener("click", function () {
-    // This line sets up an event listener for the click event on the "Post" button.
-    // When the button is clicked, the function provided as the second argument will run.
-
-    // Step 2: Get the comment from the textarea
-    const newComment = document.getElementById("new-comment").value;
-
-    // Step 3: Create a new paragraph element for the comment
-    const commentContainer = document.getElementById("comment-container");
-    const commentElement = document.createElement("p");
-    commentElement.innerText = newComment;
-
-    // Step 4: Append the comment to the comment container
-    commentContainer.appendChild(commentElement);
-
-    // Clear the textarea after posting the comment
-    document.getElementById("new-comment").value = "";
-});
-            </script>
+            <iframe src="https://kiwiirc.com/client/irc.libera.chat/?nick=memow|?&theme=cli#waytewdank" style="border:0; width:100%; height:450px;"></iframe>
           </ul> 
           </div>
         </div>
       </div>
     </div>
-
-      
 
     </div>
   </div>
